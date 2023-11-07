@@ -1,9 +1,14 @@
 function estiljs(){
     document.getElementById("text").style.color = "yellow";
 }
-function prenValorForm(){
-    let inputs = document.getElementsByName("input")
-    let nom = inputs[0].value;
-    let cognom = inputs[1].value;
-    console.log(nom+ " "+cognom);
+let numeroAleatorio = parseInt(Math.random()* 10)+1;
+    console.log(numeroAleatorio);
+    function comprovacio(){
+    let number
+    if (numeroAleatorio == number){
+    alert("¡Ha acertado el número!");
+    } else {
+    alert("No lo has conseguido, sigue intentando");
+    }
+
 }
