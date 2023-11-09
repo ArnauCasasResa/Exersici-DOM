@@ -23,7 +23,35 @@ body{
     flex-direction: row;
     
 }
-.asterisco{
+#asterisco1{
+    background-color: rgb(63, 146, 241);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: larger;
+    font-weight: 100;
+}
+#asterisco2{
+    background-color: rgb(63, 146, 241);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: larger;
+    font-weight: 100;
+}
+#asterisco3{
+    background-color: rgb(63, 146, 241);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: larger;
+    font-weight: 100;
+}
+#asterisco4{
+    background-color: rgb(63, 146, 241);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: larger;
+    font-weight: 100;
+}
+#asterisco5{
     background-color: rgb(63, 146, 241);
     border-radius: 10px;
     padding: 30px;
@@ -45,7 +73,7 @@ fieldset{
     font-size: larger;
     color:rgb(63, 146, 241);
 }
-#numero{
+#miNumero{
     margin-top: 2%;
     padding-right: 55%;
     padding-top: 10px;
@@ -63,12 +91,10 @@ fieldset{
 }
 #boton{
     color: white;
-    padding: 37.5%;
     padding-top: 2%;
     padding-bottom: 2%;
     font-size: larger;
     background-color:rgb(63, 146, 241);
-    justify-content: center;
     border-radius: 5px;
     border-color: rgb(63, 146, 241);
     border-style: double;
@@ -78,4 +104,46 @@ fieldset{
     background-color: rgb(241, 241, 241);
     color:rgb(63, 146, 241);
     transition: 0.5s;
+}
+#mensaje{
+    display: flex;
+    justify-content: center;
+    background-color:crimson;
+    border-style: double;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+    border-color:crimson;
+    margin: 3%;
+}
+#reinicio{
+    display: flex;
+    justify-content: end;
+}
+#reboot{
+    margin-right: 5%;
+}
+#reboot:hover{
+    cursor: pointer;
+}
+#creacionCeldas{
+    flex-wrap: wrap;
+    display: flex;
+    width: 70%;
+    margin-left: 14%;
+    justify-content: center;
+    margin-top: 2%;
+}
+.celdasNuevas{
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    gap: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    font-size: xx-large;
 }
