@@ -4,26 +4,44 @@
         <title>Practica adivina el numero</title>
         <script src="scriptJava.js"></script>
         <link rel="stylesheet" type="text/css" href="practica.css">
+        <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     </head>
     <body>
         <div id="practica">
             <p id="text"><strong>Adivina el número secreto</strong></p>
-            <div id="caja">
-                <div class="asterisco"><strong>*</strong></div>
-                <div class="asterisco"><strong>*</strong></div>
-                <div class="asterisco"><strong>*</strong></div>
-                <div class="asterisco"><strong>*</strong></div>
-                <div class="asterisco"><strong>*</strong></div>
+            <div id="reinicio">
+                <img id="reboot" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-q.cdn.bubble.io%2Ff1626336377328x192322120938955620%2FCustom_App_Refresh_Bar_jpg.gif?w=&h=&auto=compress&dpr=1&fit=max" height="50px" onclick="reload()">
             </div>
-            <form id="formulari" onclick="comprovacio()">
+            <div id="caja">
+                <div id="asterisco1">
+                    <strong>*</strong>
+                </div>
+                <div id="asterisco2">
+                    <strong>*</strong>
+                </div>
+                <div id="asterisco3">
+                    <strong>*</strong>
+                </div>
+                <div id="asterisco4">
+                    <strong>*</strong>
+                </div>
+                <div id="asterisco5">
+                    <strong>*</strong>
+                </div>
+            </div>
+            <form id="formulari">
                 <fieldset>
                     <p id="textinio">Escribe aqui un numero</p>
-                    <input id="numero" type="text" name="number" value="" placeholder="01234">
+                    <input id="miNumero" type="text" name="number" value="" placeholder="01234">
                     <div id="button">
-                        <input id="boton" type="button" value="Comprobar">
+                        <button id="boton" type="button" onclick="comprovacio()">Comproba si es correcte</button>
                     </div>
                 </fieldset>
             </form>
+            <div id="mensaje">
+                Tienes un margen de 5 intentos.
+            </div>
+            <div id="creacionCeldas"></div>
         </div>
     </body>
 </html>
