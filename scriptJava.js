@@ -1,6 +1,6 @@
 var gameOver = false;
 function randomNum() {
-    var random = Math.floor(Math.random() * 9999);
+    var random = Math.floor(Math.random() * 99999);
     random = random.toString().padStart(5, '0');
     console.log(random)
     return random;
